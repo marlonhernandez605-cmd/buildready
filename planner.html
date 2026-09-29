@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Use an illustrative PC budget, a local planning worksheet, and a compatibility checklist before buying parts.">
+    <title>Plan your build | BuildReady</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <!-- Shared navigation uses relative links so the site works locally and on GitHub Pages. -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="BuildReady home"><span class="brand-mark" aria-hidden="true">B</span>BuildReady<span class="brand-dot">.</span></a>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="components.html">Components</a></li>
+                    <li><a href="building.html">Build guide</a></li>
+                    <li><a href="planner.html" aria-current="page">Build planner</a></li>
+                </ul>
+            </nav>
+            <span class="header-note">A BEGINNER'S FIELD GUIDE</span>
+        </div>
+    </header>
+    <main id="main">
+        <section class="container page-heading"><p class="eyebrow">03 / MAKE A PLAN</p><h1>Good builds start<br><span>before the checkout.</span></h1><p class="intro">Know what the PC is for, give each part a place in the budget, and check how everything fits together.</p></section>
+        <div class="container planner-layout">
+            <section class="budget-panel"><div class="panel-heading"><p class="eyebrow">AN EXAMPLE, NOT A SHOPPING LIST</p><h2>A sample $1,200 build.</h2><p>Illustrative budget allocations in USD, not live prices or specific product recommendations. Tax, shipping, operating system, and peripherals are excluded.</p></div>
+                <div class="table-scroll"><table>
+                    <caption>Example component budget</caption>
+                    <thead><tr><th id="category">Category</th><th id="part">Component</th><th id="cost">Allocation</th></tr></thead>
+                    <tbody>
+                    <!-- MDN ATTRIBUTE 1: rowspan makes a cell span multiple rows. Location: the category cells in this planner.html budget table. It groups components into Core, Platform, and Support. https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/td#rowspan -->
+                    <!-- MDN ATTRIBUTE 2: headers lists the IDs of associated th cells. Location: data cells in this budget table. It explicitly connects each component and amount to its column and category headers. https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/td#headers -->
+                        <tr><th id="core" headers="category" rowspan="2" scope="rowgroup">Core</th><td headers="core part">Processor</td><td headers="core cost">$200</td></tr>
+                        <tr><td headers="core part">Graphics card</td><td headers="core cost">$400</td></tr>
+                    </tbody>
+                    <tbody>
+                        <tr><th id="platform" headers="category" rowspan="3" scope="rowgroup">Platform</th><td headers="platform part">Motherboard</td><td headers="platform cost">$150</td></tr>
+                        <tr><td headers="platform part">Memory</td><td headers="platform cost">$100</td></tr>
+                        <tr><td headers="platform part">Storage</td><td headers="platform cost">$100</td></tr>
+                    </tbody>
+                    <tbody>
+                        <tr><th id="support" headers="category" rowspan="3" scope="rowgroup">Support</th><td headers="support part">Power supply</td><td headers="support cost">$100</td></tr>
+                        <tr><td headers="support part">Case</td><td headers="support cost">$100</td></tr>
+                        <tr><td headers="support part">Cooling</td><td headers="support cost">$50</td></tr>
+                    </tbody>
+                    <!-- MDN ELEMENT 2: tfoot groups table summary rows. Location: the bottom of this budget table in planner.html. It displays the total of the eight illustrative allocations above. https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/tfoot -->
+                    <tfoot><tr><th id="total" colspan="2" scope="row">Total allocation</th><td headers="total cost">$1,200</td></tr></tfoot>
+                </table></div>
+            </section>
+            <section class="worksheet-panel" id="worksheet"><p class="eyebrow">YOUR STARTING POINT</p><h2>Sketch out your build.</h2><p>A simple on-page worksheet. Entries are temporary and are not sent or saved; copy your notes before leaving.</p>
+                <form>
+                    <fieldset>
+                        <!-- MDN ELEMENT 3: legend provides a caption for its parent fieldset. Location: this planner.html worksheet. It names the related build-preference inputs. https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/legend -->
+                        <legend>Build preferences</legend>
+                        <label for="build-name">Build name</label><input id="build-name" type="text" placeholder="My first desktop">
+                        <label for="purpose">Main use</label><select id="purpose"><option>Gaming</option><option>School and everyday use</option><option>Creative projects</option><option>A little of everything</option></select>
+                        <!-- MDN ATTRIBUTE 3: step defines valid numeric increments. Location: the budget input below in planner.html. With min=0 and step=50, the budget accepts multiples of $50. https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/step -->
+                        <label for="budget">Target budget (USD, $50 increments)</label><input id="budget" type="number" min="0" step="50" value="1200">
+                        <label for="notes">What matters most?</label><textarea id="notes" rows="3" placeholder="Quiet fans, room to upgrade, a smaller case..."></textarea>
+                    </fieldset>
+                    <button class="reset-button" type="reset">Reset worksheet</button>
+                </form>
+            </section>
+        </div>
+        <section class="container checklist-section" id="checklist"><div class="section-heading"><div><p class="eyebrow">THE FINAL PASS</p><h2>Before you buy, check these.</h2></div><p>Tick items as you verify them.<br>Checks are temporary, too.</p></div><div class="checklist-grid">
+            <label class="check-item"><input type="checkbox"><span><strong>CPU + motherboard</strong>Socket, chipset, and BIOS support match.</span></label>
+            <label class="check-item"><input type="checkbox"><span><strong>Memory support</strong>RAM type and kit work with the board.</span></label>
+            <label class="check-item"><input type="checkbox"><span><strong>Case clearance</strong>Board, GPU, cooler, and PSU all fit.</span></label>
+            <label class="check-item"><input type="checkbox"><span><strong>Power connections</strong>PSU capacity and approved cables suit the parts.</span></label>
+            <label class="check-item"><input type="checkbox"><span><strong>Storage support</strong>Drive interface and dimensions match the slot.</span></label>
+            <label class="check-item"><input type="checkbox"><span><strong>The whole setup</strong>Display, keyboard, mouse, OS, tax, and shipping are budgeted.</span></label>
+        </div></section>
+        <aside class="container callout"><div><p class="eyebrow">READY FOR THE NEXT STEP?</p><h2>Give your plan a final look.</h2><p>Review the exact product manuals before assembly. Keep a copy of your chosen parts and compatibility notes.</p></div><a class="button" href="building.html">Read the build guide ↗</a></aside>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div><a class="brand footer-brand" href="index.html">BuildReady<span class="brand-dot">.</span></a><p>A little knowledge. A build that's yours.</p></div>
+            <p>PC building enthusiast site · CIT 384<br><a href="#top">Back to top ↑</a></p>
+        </div>
+    </footer>
+</body>
+</html>

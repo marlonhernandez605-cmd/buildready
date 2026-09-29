@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 660" fill="none">
+<title>Illustrated desktop PC with visible cooling fans, motherboard and graphics card</title>
+<defs><linearGradient id="case" x1="140" y1="80" x2="500" y2="590" gradientUnits="userSpaceOnUse"><stop stop-color="#303947"/><stop offset="1" stop-color="#10151d"/></linearGradient><linearGradient id="glass" x1="140" y1="100" x2="480" y2="600" gradientUnits="userSpaceOnUse"><stop stop-color="#8ab8e6" stop-opacity=".2"/><stop offset="1" stop-color="#8ab8e6" stop-opacity=".01"/></linearGradient><radialGradient id="glow"><stop stop-color="#64a8ff" stop-opacity=".22"/><stop offset="1" stop-color="#64a8ff" stop-opacity="0"/></radialGradient></defs>
+<ellipse cx="335" cy="338" rx="280" ry="300" fill="url(#glow)"/>
+<ellipse cx="335" cy="602" rx="220" ry="20" fill="#070a0f"/>
+<path d="M147 111 421 63 526 116 249 167Z" fill="#394350" stroke="#697585"/>
+<path d="M147 111 421 63 421 537 147 590Z" fill="url(#case)" stroke="#667485" stroke-width="2"/>
+<path d="M421 63 526 116 526 586 421 537Z" fill="#171e28" stroke="#667485" stroke-width="2"/>
+<path d="M162 128 407 84 407 476 162 524Z" fill="#101924" stroke="#445465"/>
+<path d="M194 154 383 120 383 364 194 402Z" fill="#1f3343" stroke="#466276"/>
+<g stroke="#365269" stroke-width="3"><path d="M203 186 239 179 239 332 371 307"/><path d="M207 207 223 204 223 350 370 322"/><path d="M207 230 211 229 211 368 370 336"/></g>
+<path d="M245 201 314 188 314 269 245 282Z" fill="#36495c" stroke="#7a9bb5"/>
+<ellipse cx="280" cy="235" rx="34" ry="40" stroke="#6caaff" stroke-width="5"/>
+<ellipse cx="280" cy="235" rx="24" ry="29" stroke="#b8d8ff" stroke-width="2"/>
+<path d="M272 214 290 218 295 240 279 255 263 241Z" fill="#3d6896"/>
+<path d="M335 169 344 167 344 290 335 292Z" fill="#6caaff"/><path d="M355 165 364 163 364 286 355 288Z" fill="#93bdff"/>
+<path d="M183 375 389 338 389 394 183 434Z" fill="#343f4d" stroke="#7b8b9e" stroke-width="2"/>
+<path d="M194 390 376 357" stroke="#80b6ff" stroke-width="5"/>
+<text x="236" y="411" fill="#b7c5d6" font-family="monospace" font-size="15" transform="rotate(-10 236 411)">GRAPHICS / GPU</text>
+<path d="M162 128 407 84 407 476 162 524Z" fill="url(#glass)"/>
+<path d="M167 539 403 493" stroke="#6a7888"/><path d="M167 553 403 507" stroke="#323f4e"/>
+<g stroke="#629eea" stroke-width="5"><ellipse cx="474" cy="216" rx="31" ry="49"/><ellipse cx="474" cy="346" rx="31" ry="49"/><ellipse cx="474" cy="476" rx="31" ry="49"/></g>
+<g stroke="#b2d4ff" stroke-width="1.5"><ellipse cx="474" cy="216" rx="23" ry="38"/><ellipse cx="474" cy="346" rx="23" ry="38"/><ellipse cx="474" cy="476" rx="23" ry="38"/></g>
+<g fill="#344f73"><ellipse cx="474" cy="216" rx="10" ry="15"/><ellipse cx="474" cy="346" rx="10" ry="15"/><ellipse cx="474" cy="476" rx="10" ry="15"/></g>
+<path d="M443 124 505 154" stroke="#566677"/><circle cx="487" cy="128" r="4" fill="#8ec0ff"/>
+<path d="M165 589 192 584 192 608 165 614Z" fill="#263140"/><path d="M493 575 518 587 518 610 493 599Z" fill="#263140"/>
+<g fill="#93b5db" font-family="monospace" font-size="10" letter-spacing="2"><text x="64" y="90">BUILD / 001</text><text x="64" y="634">ILLUSTRATED MID-TOWER</text></g>
+<path d="M65 104H114M65 108V153M554 540V583H578" stroke="#425977"/>
+</svg>

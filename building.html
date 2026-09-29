@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A six-stage introduction to assembling a desktop PC, followed by first-boot and troubleshooting tips.">
+    <title>The build guide | BuildReady</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <!-- Shared navigation uses relative links so the site works locally and on GitHub Pages. -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="BuildReady home"><span class="brand-mark" aria-hidden="true">B</span>BuildReady<span class="brand-dot">.</span></a>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="components.html">Components</a></li>
+                    <li><a href="building.html" aria-current="page">Build guide</a></li>
+                    <li><a href="planner.html">Build planner</a></li>
+                </ul>
+            </nav>
+            <span class="header-note">A BEGINNER'S FIELD GUIDE</span>
+        </div>
+    </header>
+    <main id="main">
+        <section class="container page-heading"><p class="eyebrow">02 / FROM PARTS TO POWER-ON</p><h1>Your build.<br><span>One step at a time.</span></h1><p class="intro">Take it slowly, keep your manuals nearby, and enjoy the process. This overview supports the instructions for your exact hardware.</p></section>
+        <div class="container guide-layout"><aside class="guide-sidebar"><p class="eyebrow">BEFORE YOU START</p><h2>A few essentials.</h2><ul class="clean-list"><li>Suitable screwdriver</li><li>Component manuals</li><li>Clear workspace</li><li>Containers for screws</li><li>Time and patience</li></ul><p class="safety-note">Switch off and unplug the PC before installing or adjusting components. Never open a power supply enclosure.</p><a class="text-link" href="planner.html#checklist">Check your parts first →</a></aside><ol class="build-steps"><li><div class="step-index">01</div><div><h2>Prepare your workspace.</h2><p>Use a clear, dry, stable work surface and keep food and drinks away. Have a suitable screwdriver, the component manuals, and small containers for screws ready. Follow the manufacturers’ electrostatic-discharge precautions; handle boards by their edges.</p><p class="step-tip"><strong>Builder note:</strong> Start with the manuals. Case layouts and connector locations vary.</p></div></li>
+<li><div class="step-index">02</div><div><h2>Install the CPU, memory, and SSD.</h2><p>With the motherboard supported on its box, follow the socket instructions to align and install the processor without touching contacts or forcing it. Install memory in the recommended slots and mount your SSD according to the board manual.</p><p class="step-tip"><strong>Builder note:</strong> Do not assume every socket or M.2 slot uses the same installation method.</p></div></li>
+<li><div class="step-index">03</div><div><h2>Mount the CPU cooler.</h2><p>Use the mounting hardware for your socket. Remove any protective film on the cooler contact surface. Follow the cooler’s thermal-paste instructions; some coolers already have paste applied. Connect the cooler fan or pump as directed.</p><p class="step-tip"><strong>Builder note:</strong> Never power the CPU without its cooler properly installed.</p></div></li>
+<li><div class="step-index">04</div><div><h2>Move the build into the case.</h2><p>Check that motherboard standoffs match the board’s mounting holes, and remove any extra standoffs beneath the board. Install a separate I/O shield if required, then mount the motherboard and power supply following their manuals.</p><p class="step-tip"><strong>Builder note:</strong> Plan cable routes before the case gets crowded.</p></div></li>
+<li><div class="step-index">05</div><div><h2>Install the graphics card and connect power.</h2><p>Install a dedicated GPU in the recommended PCIe slot and secure it to the case. Connect motherboard, CPU, GPU, and drive power where needed. Connect case buttons, USB, audio, and fans using the motherboard diagram.</p><p class="step-tip"><strong>Builder note:</strong> Fully seat connectors. Never mix modular PSU cables from different models unless explicitly approved.</p></div></li>
+<li><div class="step-index">06</div><div><h2>Inspect, then power on.</h2><p>Check for loose screws, loose cables, and fan obstructions. Close up as directed, connect a display and keyboard, and turn on the system. If using a dedicated graphics card, connect the display to that card.</p><p class="step-tip"><strong>Builder note:</strong> The first start can take time, especially during memory training. Consult the manual before interrupting it.</p></div></li></ol></div>
+        <section class="container first-boot"><div><p class="eyebrow">THE FIRST BOOT</p><h2>Meet your BIOS / UEFI.</h2><p>Firmware lets you check whether the system detects your processor, memory, and storage before installing an operating system.</p>
+        <!-- MDN ELEMENT 1: kbd represents user input. Location: this first-boot section in building.html. It marks the physical keys used to enter firmware setup. https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/kbd -->
+        <p>During startup, the setup key is often <kbd>Delete</kbd> or <kbd>F2</kbd>. Check your motherboard manual for the correct key and timing.</p><p>Check temperatures and detected hardware. Then follow your operating system's official installation instructions and install drivers from the hardware manufacturers.</p></div><aside class="boot-note"><span class="card-number">NO DISPLAY?</span><h3>Start with the simple checks.</h3><p>Confirm the monitor input, display cable connection, PSU switch, and motherboard diagnostic indicators. Turn off and unplug before reseating any hardware.</p><a href="components.html">Revisit the components →</a></aside></section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div><a class="brand footer-brand" href="index.html">BuildReady<span class="brand-dot">.</span></a><p>A little knowledge. A build that's yours.</p></div>
+            <p>PC building enthusiast site · CIT 384<br><a href="#top">Back to top ↑</a></p>
+        </div>
+    </footer>
+</body>
+</html>
