@@ -4,8 +4,6 @@ A four-page HTML and CSS website about understanding, assembling, and planning a
 
 ## Live website
 
-**Before submitting:** replace the text below with the actual URL shown in your repository's **Settings → Pages** after deployment. Do not submit this README with the placeholder still present.
-
 Live site: https://marlonhernandez605-cmd.github.io/buildready/ 
 
 ## Open locally
